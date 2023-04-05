@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int score1, score2, score3;
+    float result;
+    printf(" \"GRADING SYSTEM\" \n");
+    printf("passing grade: 75\n\n");
+    printf("Input MATH grade:");
+    scanf("%d", &score1);
+    printf("%d \n", score1);
+    if (score1 >= 75)
+        printf("You passed.\n");
+    else
+        printf ("You failed. \n");
+        
+    printf("\nInput SCIENCE grade:");
+    scanf("%d", &score2);
+    printf("%d \n", score2);
+    if (score2 >= 75)
+        printf("You passed.\n");
+    else
+        printf ("You failed. \n");
+    
+    printf("\nInput ENGLISH grade:");
+    scanf("%d", &score3);
+    printf("%d \n", score3);
+    if (score3 >= 75)
+        printf("You passed.\n");
+    else
+        printf ("You failed. \n");
+      
+       result = (score1+score2+score3)/3;
+    printf("\nFinal Average:%4.2f",result);
+    if (result >= 75)
+        printf("\nCongratulations, you passed!");
+    else
+        printf ("\nSorry, you failed. Better luck next time!");
+        
+    return 0;
+}
